@@ -8,7 +8,7 @@
 
 ### View demo:
 
-- Comming Soon
+- [Live Demo](https://vitfl.github.io/pet-shelter_landing-page/)
 
 ### Used technologies:
 
