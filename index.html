@@ -6,10 +6,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cozy House - Shelter for pets in Lviv</title>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__logo logo">
+      <a href="/" class="logo__link">
+        <h1 class="logo__title">Cozy House</h1>
+        <h2 class="logo__desc">Shelter for pets in Lviv</h2>
+      </a>
+    </div>
+    <nav class="navbar">
+      <ul class="navbar__list">
+        <li class="navbar__list-item"><a href="#about" class="navbar__link">About the shelter</a></li>
+        <li class="navbar__list-item"><a href="#about" class="navbar__link">Our pets</a></li>
+        <li class="navbar__list-item"><a href="#about" class="navbar__link">To help the shelter</a></li>
+        <li class="navbar__list-item"><a href="#about" class="navbar__link">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="hero__composition">
+        <h3 class="hero__composition-title">Not only people
+          need a home</h3>
+        <p class="hero__composition-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida
+          est in porttitor porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
+        <a class="button button--filled" href="#friends">Make a friend</a>
+      </div>
+      <div class="hero__dog-img"></div><!-- contains hero-dog.png as background image -->
+    </section>
+    <section id="about" class="section">
+      <div class="section__cat-n-dog-img"></div><!-- contains cat-n-dog.png as background image -->
+      <div class="section__composition">
+        <h3 class="section__title">About the shelter “Cozy House”</h3>
+        <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit
+          condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
+        <p class="section__text">Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis
+          justo nec leo. Praesent mattis nibh quis ultrices pharetra. Morbi tempus at ante sit amet tristique.
+          Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante
+          vitae, dignissim lorem. Sed at ligula et sem mattis gravida ac vel erat. </p>
+      </div>
 
+    </section>
+    <section id="friends" class="section">
+      <h3 class="section__title">Our friends who are looking for a home</h3>
+      <div class="section__carousel">
+        <!-- Here will be carousel with pets that are in a shelter and are ready to be adopted, 
+          for example this one https://owlcarousel2.github.io/OwlCarousel2/ -->
+      </div>
+      <a class="button button--filled" href="#friends">Get to know the rest</a>
+    </section>
+    <section id="donate" class="section">
+      <div class="section__lying-dog"></div><!-- contains lying-dog.png as background image in css -->
+      <div class="section__composition">
+        <h3 class="section__title">In addition, you can make a donation</h3>
+        <div class="bank-account__composition">
+          <p class="section__text">Bank of Lviv / Current account</p>
+          <i class="bank-account__icon"></i>
+          <span class="bank-account__number">8380 2880 8028 8791 7435</span>
+          <p class="section__info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas a ipsum at libero sagittis dignissim sed
+            ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+            et malesuada fames ac ante ipsum primis in faucibus. </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__composition">
+      <h3 class="footer__title"></h3>
+
+    </div>
+    <div class="footer__composition">
+      <h3 class="footer__title">For questions and suggestions</h3>
+      <form action="" class="footer__form" method="POST">
+        <input type="text" class="footer__text-input" name="name" placeholder="Name" required>
+        <input type="text" class="footer__text-input" name="email" placeholder="Email address">
+        <input type="text" class="footer__text-input" name="subject" placeholder="Subject">
+        <textarea name="message" rows="10" cols="50" placeholder="Message" required></textarea>
+        <button class="button button--filled">Send</button>
+      </form>
+    </div>
+    <div class="footer__composition">
+      <h3 class="footer__title">We are waiting
+        for your visit</h3>
+      <div class="footer__contact-holder">
+        <i class="icon-pin"></i>
+        <span class="footer__contact">Lviv, Saksahanskogo str, 22/2</span>
+      </div>
+      <div class="footer__contact-holder">
+        <i class="icon-pin"></i>
+        <span class="footer__contact">Lviv, Lychakivska str, 176</span>
+      </div>
+      <div class="footer__contact-holder">
+        <i class="icon-envelope"></i>
+        <span class="footer__contact">email@shelter.com</span>
+      </div>
+      <div class="footer__contact-holder">
+        <i class="icon-telephone"></i>
+        <span class="footer__contact">+38 099 343 23 54</span>
+      </div>
+    </div>
+    <div class="footer__doghey-tongue"></div><!-- contains doghey-tongue.png as background image in css-->
+  </footer>
 </body>
 
 </html>
