@@ -11,18 +11,19 @@
 
 <body>
   <header class="header">
-    <div class="header__logo logo">
-      <a href="index.html" class="logo__link">
-        <h1 class="logo__title">Cozy House</h1>
-        <h2 class="logo__desc">Shelter for pets in Lviv</h2>
+    <div class="header__logo">
+      <a href="index.html" class="header__logo-link">
+        <h1 class="header__logo-title">Cozy House</h1>
+        <h2 class="header__logo-desc">Shelter for pets in Lviv</h2>
       </a>
     </div>
     <nav class="navbar">
+      <div id="menu-button" class="hamburger"><span></span></div>
       <ul class="navbar__list">
         <li class="navbar__list-item"><a href="#about" class="navbar__link">About the shelter</a></li>
-        <li class="navbar__list-item"><a href="#about" class="navbar__link">Our pets</a></li>
-        <li class="navbar__list-item"><a href="#about" class="navbar__link">To help the shelter</a></li>
-        <li class="navbar__list-item"><a href="#about" class="navbar__link">Contacts</a></li>
+        <li class="navbar__list-item"><a href="#friends" class="navbar__link">Our pets</a></li>
+        <li class="navbar__list-item"><a href="#donate" class="navbar__link">To help the shelter</a></li>
+        <li class="navbar__list-item"><a href="#contacts" class="navbar__link">Contacts</a></li>
       </ul>
     </nav>
   </header>
@@ -33,12 +34,12 @@
           need a home</h3>
         <p class="hero__composition-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida
           est in porttitor porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
-        <a class="button button--filled" href="#friends">Make a friend</a>
+        <a class="hero__button button button--filled" href="#friends">Make a friend</a>
       </div>
-      <div class="hero__dog-img"></div><!-- contains hero-dog.png as background image -->
+      <div class="hero__dog-img"></div>
     </section>
-    <section id="about" class="section">
-      <div class="section__cat-n-dog-img"></div><!-- contains cat-n-dog.png as background image -->
+    <!-- <section id="about" class="section">
+      <div class="section__cat-n-dog-img"></div>
       <div class="section__composition">
         <h3 class="section__title">About the shelter “Cozy House”</h3>
         <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit
@@ -53,18 +54,25 @@
     <section id="friends" class="section">
       <h3 class="section__title">Our friends who are looking for a home</h3>
       <div class="section__carousel">
-        <!-- Here will be carousel with pets that are in a shelter and are ready to be adopted, 
-          for example this one https://owlcarousel2.github.io/OwlCarousel2/ -->
+      
       </div>
       <a class="button button--filled" href="#friends">Get to know the rest</a>
     </section>
     <section id="donate" class="section">
-      <div class="section__lying-dog"></div><!-- contains lying-dog.png as background image in css -->
+      <div class="section__lying-dog"></div>
       <div class="section__composition">
         <h3 class="section__title">You can make a donation</h3>
         <div class="bank-account__composition">
           <p class="section__text">Bank of Lviv / Current account</p>
-          <i class="bank-account__icon"></i>
+          <svg class="bank-account__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="30" height="24" viewBox="0 0 30 24">
+            <g>
+              <g transform="translate(-974 -3155)">
+                <image width="30" height="24" transform="translate(974 3155)"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAYAAADtaU2/AAACV0lEQVRIS+2Wy2sUQRDGv+rROKIkHlYRXaJGSKZmISgIghBEERS8ehHxcZCAF0FPHvRkziJeFD1oEBH8E+ILFQRPLoHtmuQQNawiuoeIr2x0umRCdhmX2WUlDy+pU0/3V/3rru6pLkLK8vn86lwutyrdt1DtSqVSLZfLP2vzUdIIw3C3ql4BsGehQE3meUlE5621r6ivr2+XMeaFqt73PO96HMefFwPued76OI7PENFR59wABUHwmIg+iMjxxQA2zsnMd1V1EzHzL1U9EEXRszAM76nqmlYLcM6dGxsbe5OhSTZxmogOqep7Y8xtVT0JoBvAQxG5AUCDINhLRI8SsBpjdpZKpSIzTwHoagWuaTN2chHA5Ra+QyJyqVAo7HDOvf4L3NPT09XZ2Tl74ZpZsVj8CiDOAE8A2NbCNTnOzZlgZj4MYGXNWVV/RFE00s7ZM7MFwM20RDRhrd3eDNwY6ncisrVN8AkAwyltFUA9J6jqYBRFtzLBQRBcMMb4qR1PicjVdsBz+WBAVQ+q6qTv+w+q1eoRAMnCR0TkeaLJBLcLmI9uGTz7H88nhO36Lod6NtQZufqTiAyGYXhWVfc3hDNJkYkNpfuJ6Im19hoz3wSwoTZGRN+ttcf+KYEw8x0AScKvm6ruSz6I6GnDgoZF5BQzvwWwJTX2RUTWZYILhUJ3HMemJu7o6Pg9Ojpa7u3tzRlj1qYB09PTH5Nv3/c3pvudc9/Gx8cr/f39+ZmZmRW1Mc/zXKlUmkyD689iuzdzPrr6s/jfCoH/VvrMJfelL/bS57WU5e0fim2SfFwrvc8AAAAASUVORK5CYII=" />
+              </g>
+            </g>
+          </svg>
           <span class="bank-account__number">8380 2880 8028 8791 7435</span>
           <p class="section__info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Maecenas a ipsum at libero sagittis dignissim sed
@@ -73,9 +81,10 @@
         </div>
 
       </div>
-    </section>
+    </section>-->
   </main>
-  <footer class="footer">
+
+  <!-- <footer id="contacts" class="footer">
     <div class="footer__composition">
       <h3 class="footer__title">For questions and suggestions</h3>
       <form action="https://formspree.io/vitfl@protonmail.com" class="footer__form" method="POST">
@@ -106,8 +115,8 @@
         <span class="footer__contact">+38 099 343 23 54</span>
       </div>
     </div>
-    <div class="footer__doghey-tongue"></div><!-- contains doghey-tongue.png as background image in css-->
-  </footer>
+    <div class="footer__doghey-tongue"></div>
+  </footer> -->
 </body>
 
 </html>
