@@ -1,4 +1,4 @@
-/* Font face setup */
+/* Fonts setup */
 @font-face {
   font-family: "Lato-Regular";
   src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"),
@@ -27,7 +27,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* END: Font face setup */
+/* END: Fonts setup */
 
 /* Declaring global-scope CSS variables */
 :root {
@@ -47,6 +47,7 @@
 }
 /* END: Declaring global-scope CSS variables */
 
+/* Default values */
 html {
   font-size: 15px;
   line-height: 1.45;
@@ -58,6 +59,8 @@ body {
   max-width: 1920px;
   margin: auto;
 }
+
+/* END: Default values */
 
 /* Reseting some default margins */
 h1,
@@ -258,17 +261,29 @@ p {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  /*  */
+  /* Hero Section */
+  .hero {
+    flex-direction: row;
+  }
+  .hero__dog-img {
+    align-self: initial;
+  }
+  /* END: Hero Section */
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  /* Hamburger */
   .hamburger {
     display: none;
   }
+  /* END: Hamburger */
+
+  /* Navbar */
   .navbar__list {
     display: flex;
   }
+  /* END: Navbar */
 
   /* Hero Section */
   .hero {
@@ -279,9 +294,6 @@ p {
   }
   .hero__composition-text {
     font-size: 1rem;
-  }
-  .hero__dog-img {
-    align-self: initial;
   }
   /* END: Hero Section */
 }
@@ -305,6 +317,7 @@ p {
   html {
     font-size: 16px;
   }
+
   /* Header */
   .header {
     justify-content: space-around;
