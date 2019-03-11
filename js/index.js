@@ -1,3 +1,4 @@
+/* Owl.Carousel */
 $(document).ready(function() {
   $('.owl-carousel').owlCarousel({
     loop: true,
@@ -17,3 +18,20 @@ $(document).ready(function() {
     },
   });
 });
+
+/* END: Owl.Carousel */
+
+/* Modal */
+
+const modalElements = document.querySelectorAll('.modal-overlay, .modal');
+const modalButtons = document.querySelectorAll('.friends__card-button, .close-modal');
+
+modalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    modalElements.forEach(modalElement => {
+      modalElement.classList.toggle('active');
+    });
+  });
+});
+
+/* END: Modal */
