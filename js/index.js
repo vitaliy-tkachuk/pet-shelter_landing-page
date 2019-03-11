@@ -12,6 +12,10 @@ $(document).ready(function() {
         nav: true,
       },
       600: {
+        items: 2,
+        nav: true,
+      },
+      800: {
         items: 3,
         nav: true,
       },
@@ -24,7 +28,7 @@ $(document).ready(function() {
 /* Modal */
 
 const modalElements = document.querySelectorAll('.modal-overlay, .modal');
-const modalButtons = document.querySelectorAll('.friends__card-button, .close-modal');
+const modalButtons = document.querySelectorAll('.friends__card-button, .modal__close');
 
 modalButtons.forEach(button => {
   button.addEventListener('click', () => {
