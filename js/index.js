@@ -39,3 +39,17 @@ modalButtons.forEach(button => {
 });
 
 /* END: Modal */
+
+/* Mobile Navbar */
+
+const hamburger = document.getElementById('menu-button');
+const menuMobile = document.getElementsByClassName('menu-mobile')[0];
+const menuMobileItems = document.querySelectorAll('.menu-mobile__item');
+
+hamburger.onclick = () => {
+  hamburger.classList.toggle('active');
+  menuMobile.classList.toggle('menu-mobile--active');
+  menuMobileItems.forEach(menuMobileItem => menuMobileItem.classList.toggle('menu-mobile__item--active'));
+};
+
+/* Mobile Navbar */
