@@ -340,19 +340,21 @@ p {
 
 /* Off-canvas Menu for Mobile Devices*/
 .menu-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  visibility: hidden;
   top: 0;
   margin-left: -20px;
   height: 100vh;
   width: 100%;
   background: gray;
   opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: opacity 0.5s ease;
 }
 .menu-mobile--active {
+  visibility: visible;
   opacity: 1;
 }
 .menu-mobile__items {
