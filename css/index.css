@@ -157,6 +157,7 @@ p {
 
 .owl-carousel {
   z-index: auto;
+  max-width: 1200px;
 }
 
 .owl-stage {
@@ -490,7 +491,10 @@ p {
 /* Friends Section */
 .friends__composition {
   width: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .friends__card {

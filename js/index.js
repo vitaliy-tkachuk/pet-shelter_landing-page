@@ -19,6 +19,10 @@ $(document).ready(function() {
         items: 3,
         nav: true,
       },
+      1200: {
+        items: 4,
+        nav: true,
+      },
     },
   });
 });
