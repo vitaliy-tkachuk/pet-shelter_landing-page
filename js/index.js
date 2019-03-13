@@ -33,12 +33,28 @@ $(document).ready(function() {
 
 const modalElements = document.querySelectorAll('.modal-overlay, .modal');
 const modalButtons = document.querySelectorAll('.friends__card-button, .modal__close');
-
+const modalOpenButton = document.querySelectorAll('.friends__card-button');
 modalButtons.forEach(button => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', e => {
     modalElements.forEach(modalElement => {
       modalElement.classList.toggle('active');
     });
+  });
+});
+
+modalOpenButton.forEach(button => {
+  button.addEventListener('click', e => {
+    fetch(`api/pet/${e.target.dataset.name}`)
+      .then(response => response.json())
+      .then(pet => {
+        for (const [key, value] of Object.entries(pet)) {
+          if (key === 'photo') {
+            document.querySelector('#pet-photo').src = value;
+          } else {
+            document.querySelector(`#pet-${key}`).innerHTML = value;
+          }
+        }
+      });
   });
 });
 
