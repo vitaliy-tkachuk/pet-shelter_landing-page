@@ -506,6 +506,7 @@ p {
   width: 60%;
 }
 
+.friends__card-title,
 .friends__card-button {
   margin-bottom: 10px;
 }
@@ -550,8 +551,7 @@ p {
 
 /* Footer */
 .footer {
-  /* padding: 20px; */
-  background: url(../images/footer-bg.png) no-repeat;
+  background: url(../images/footer-bg-small.png) no-repeat;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
@@ -613,15 +613,6 @@ p {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  /* Hero Section */
-  .hero {
-    flex-direction: row;
-  }
-  .hero__dog-img {
-    align-self: initial;
-  }
-  /* END: Hero Section */
-
   /* Sections Global Settings */
   .section {
     padding: 20px;
@@ -629,6 +620,15 @@ p {
     flex-direction: row;
   }
   /* END:Sections Global Settings */
+
+  /* Hero Section */
+  .hero__composition-title {
+    font-size: 2rem;
+  }
+  .hero__composition-text {
+    font-size: 1rem;
+  }
+  /* END: Hero Section */
 
   /* About Section */
   .section__cat-n-dog-img {
@@ -647,6 +647,15 @@ p {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  /* Hero Section */
+  .hero {
+    flex-direction: row;
+  }
+  .hero__dog-img {
+    align-self: initial;
+  }
+  /* END: Hero Section */
+
   /* Hamburger */
   .hamburger {
     display: none;
@@ -708,7 +717,17 @@ p {
   .hero__composition {
     align-self: center;
   }
+  .hero__dog-img {
+    width: 80%;
+  }
   /* END: Hero Section */
+
+  /* Footer */
+  .footer {
+    background: url(../images/footer-bg.png) no-repeat;
+    background-size: cover;
+  }
+  /* END: Footer */
 }
 
 /* Large Devices, Wide Screens */
