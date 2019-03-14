@@ -42,6 +42,7 @@ const menuMobile = document.getElementsByClassName('menu-mobile')[0];
 const menuMobileItems = document.querySelectorAll('.menu-mobile__item');
 
 hamburger.onclick = () => {
+  document.querySelector('body').classList.toggle('lock-scroll');
   hamburger.classList.toggle('active');
   menuMobile.classList.toggle('menu-mobile--active');
   menuMobileItems.forEach(menuMobileItem => menuMobileItem.classList.toggle('menu-mobile__item--active'));

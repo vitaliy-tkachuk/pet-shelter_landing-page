@@ -3,7 +3,6 @@ class PetModal {
     fetch(petsUrl)
       .then(result => result.json())
       .then(pets => {
-        console.log(pets);
         const pet = pets.find(pet => pet.id === petId);
         this.renderModalContent(renderContainer, pet);
       });
