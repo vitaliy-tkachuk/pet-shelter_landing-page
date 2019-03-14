@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1",
+    "name": "Jennifer",
+    "photo": "jennifer.png",
+    "breed": "Labrador mix",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.",
+    "age": "2 month",
+    "sex": "Female",
+    "vaccination": "full",
+    "diseases": "none",
+    "parasites": "none"
+  },
+  {
+    "id": "2",
+    "name": "Woodie",
+    "photo": "woodie.png",
+    "breed": "Golden Retriever",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.",
+    "age": "1 year",
+    "sex": "Male",
+    "vaccination": "full",
+    "diseases": "none",
+    "parasites": "none"
+  },
+  {
+    "id": "3",
+    "name": "Katrine",
+    "photo": "katrine.png",
+    "breed": "British Shorthair",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.",
+    "age": "4 month",
+    "sex": "Female",
+    "vaccination": "full",
+    "diseases": "none",
+    "parasites": "none"
+  },
+  {
+    "id": "4",
+    "name": "Charlie",
+    "photo": "charlie.png",
+    "breed": "Mix",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.",
+    "age": "3 years",
+    "sex": "Male",
+    "vaccination": "full",
+    "diseases": "none",
+    "parasites": "none"
+  },
+  {
+    "id": "5",
+    "name": "Bella",
+    "photo": "bella.png",
+    "breed": "Maltese Terrier",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.",
+    "age": "3 years",
+    "sex": "Female",
+    "vaccination": "full",
+    "diseases": "none",
+    "parasites": "none"
+  },
+  {
+    "id": "6",
+    "name": "Oscar",
+    "photo": "oscar.png",
+    "breed": "Mix",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.",
+    "age": "1 year",
+    "sex": "Male",
+    "vaccination": "full",
+    "diseases": "none",
+    "parasites": "none"
+  },
+  {
+    "id": "7",
+    "name": "Apollo",
+    "photo": "apollo.png",
+    "breed": "Mix",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.",
+    "age": "2 year",
+    "sex": "Male",
+    "vaccination": "full",
+    "diseases": "none",
+    "parasites": "none"
+  },
+  {
+    "id": "8",
+    "name": "Baxter",
+    "photo": "baxter.png",
+    "breed": "German Shepherd Golden Retriever Mix",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.",
+    "age": "2 month",
+    "sex": "Male",
+    "vaccination": "full",
+    "diseases": "none",
+    "parasites": "none"
+  },
+  {
+    "id": "9",
+    "name": "Frankie",
+    "photo": "frankie.png",
+    "breed": "Mix",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.",
+    "age": "6 month",
+    "sex": "Male",
+    "vaccination": "full",
+    "diseases": "none",
+    "parasites": "none"
+  }
+]

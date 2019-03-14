@@ -82,37 +82,8 @@
     <section id="friends" class="section section--dark">
       <div class="friends__composition">
         <h3 class="section__title">Our friends who are looking for a home</h3>
-        <div class="owl-carousel owl-theme">
-          <div class="friends__card">
-            <img class="friends__photo" src="images/pets/jennifer.png" alt="Jennifer photo">
-            <h4 class="friends__card-title">Jennifer</h4>
-            <div class="friends__card-button button" data-name="jennifer">Learn More</div>
-          </div>
-          <div class="friends__card">
-            <img class="friends__photo" src="images/pets/katrine.png" alt="Katrine photo">
-            <h4 class="friends__card-title">Katrine</h4>
-            <div class="friends__card-button button" data-name="katrine">Learn More</div>
-          </div>
-          <div class="friends__card">
-            <img class="friends__photo" src="images/pets/woodie.png" alt="Woodie photo">
-            <h4 class="friends__card-title">Woodie</h4>
-            <div class="friends__card-button button" data-name="woodie">Learn More</div>
-          </div>
-          <div class="friends__card">
-            <img class="friends__photo" src="images/pets/jennifer.png" alt="Jennifer photo">
-            <h4 class="friends__card-title">Jennifer</h4>
-            <div class="friends__card-button button" data-name="jennifer">Learn More</div>
-          </div>
-          <div class="friends__card">
-            <img class="friends__photo" src="images/pets/katrine.png" alt="Katrine photo">
-            <h4 class="friends__card-title">Katrine</h4>
-            <div class="friends__card-button button" data-name="katrine">Learn More</div>
-          </div>
-          <div class="friends__card">
-            <img class="friends__photo" src="images/pets/woodie.png" alt="Woodie photo">
-            <h4 class="friends__card-title">Woodie</h4>
-            <div class="friends__card-button button" data-name="woodie">Learn More</div>
-          </div>
+        <div class="owl-carousel owl-theme friends-carousel">
+          <!-- Content is generated dynamically -->
         </div>
       </div>
       <!-- Modal -->
@@ -126,18 +97,7 @@
             </svg>
           </a>
           <div class="modal__content">
-            <img class="modal__photo" id="pet-photo" src="images/no-photo-available.png" alt="Pet photo">
-            <div class="modal__text-content">
-              <h4 class="modal__header" id="pet-name">N/A</h4>
-              <h5 class="modal__sub-header" id="pet-breed">N/A</h5>
-              <p class="modal__description" id="pet-description">N/A</p>
-              <ul class="modal__list">
-                <li class="modal__list-item"><b>Age:</b> <span id="pet-age">N/A</span></li>
-                <li class="modal__list-item"><b>Vaccination:</b> <span id="pet-vaccination">N/A</span></li>
-                <li class="modal__list-item"><b>Diseases:</b> <span id="pet-diseases">N/A</span></li>
-                <li class="modal__list-item"><b>Parasites:</b> <span id="pet-parasites">N/A</span></li>
-              </ul>
-            </div>
+            <!-- Content is generated dynamically -->
           </div>
         </div>
       </div>
@@ -243,7 +203,9 @@
 
   <script src="libs/jquery/jquery-3.3.1.min.js"></script>
   <script src="libs/owl.carousel/owl.carousel.min.js"></script>
-  <script src="js/index.js"></script>
+  <script defer src="js/pet-modal.js"></script>
+  <script defer src="js/pets-list.js"></script>
+  <script defer src="js/index.js"></script>
 </body>
 
 </html>

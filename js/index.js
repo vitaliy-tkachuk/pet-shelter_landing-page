@@ -1,9 +1,10 @@
 /* Owl.Carousel */
 $(document).ready(function() {
   $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
+    loop: false,
     nav: true,
+    dots: true,
+    mouseDrag: false,
     navText: ['🠨', '🠪'],
     responsiveClass: true,
     responsive: {
@@ -29,36 +30,10 @@ $(document).ready(function() {
 
 /* END: Owl.Carousel */
 
-/* Modal */
-
-const modalElements = document.querySelectorAll('.modal-overlay, .modal');
-const modalButtons = document.querySelectorAll('.friends__card-button, .modal__close');
-const modalOpenButton = document.querySelectorAll('.friends__card-button');
-modalButtons.forEach(button => {
-  button.addEventListener('click', e => {
-    modalElements.forEach(modalElement => {
-      modalElement.classList.toggle('active');
-    });
-  });
-});
-
-modalOpenButton.forEach(button => {
-  button.addEventListener('click', e => {
-    fetch(`api/pet/${e.target.dataset.name}`)
-      .then(response => response.json())
-      .then(pet => {
-        for (const [key, value] of Object.entries(pet)) {
-          if (key === 'photo') {
-            document.querySelector('#pet-photo').src = value;
-          } else {
-            document.querySelector(`#pet-${key}`).innerHTML = value;
-          }
-        }
-      });
-  });
-});
-
-/* END: Modal */
+/* Pets List Render */
+const petsListContainer = document.querySelector('.friends-carousel');
+const petsList = new PetsList('data/pets.json', petsListContainer);
+/* END: Pets List Render */
 
 /* Mobile Navbar */
 
@@ -72,4 +47,4 @@ hamburger.onclick = () => {
   menuMobileItems.forEach(menuMobileItem => menuMobileItem.classList.toggle('menu-mobile__item--active'));
 };
 
-/* Mobile Navbar */
+/* END: Mobile Navbar */
