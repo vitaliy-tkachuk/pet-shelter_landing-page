@@ -4,17 +4,17 @@
 
 # Responsive layout of landing page for Pet Shelter
 
-## <span style="color: red">Currently under development</span>
-
 ### View demo:
 
 - [Live Demo](https://vitfl.github.io/pet-shelter_landing-page/)
 
 ### Used technologies:
 
-- Comming Soon
+- HTML 5, CSS 3, JavaScript (ES6)
+- Additional libraries/plugins: [jQuery](https://jquery.com), [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/)
 
 ### Used tools:
 
 - [Avocode](https://avocode.com/)
+- [moqups.com](https://moqups.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
