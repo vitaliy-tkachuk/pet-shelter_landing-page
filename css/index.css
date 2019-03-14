@@ -488,8 +488,8 @@ p {
 }
 /* END: About Section */
 
-/* Friends Section */
-.friends__composition {
+/* Pets Section */
+.pets__composition {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -497,7 +497,7 @@ p {
   align-items: center;
 }
 
-.friends__card {
+.pets__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -506,12 +506,12 @@ p {
   width: 60%;
 }
 
-.friends__card-title,
-.friends__card-button {
+.pets__card-title,
+.pets__card-button {
   margin-bottom: 10px;
 }
 
-/* END: Friends Section */
+/* END: Pets Section */
 
 /* Donate Section */
 .bank-account__composition {

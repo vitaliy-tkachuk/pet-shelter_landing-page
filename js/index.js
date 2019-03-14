@@ -31,7 +31,7 @@ $(document).ready(function() {
 /* END: Owl.Carousel */
 
 /* Pets List Render */
-const petsListContainer = document.querySelector('.friends-carousel');
+const petsListContainer = document.querySelector('.pets-carousel');
 const petsList = new PetsList('data/pets.json', petsListContainer);
 /* END: Pets List Render */
 

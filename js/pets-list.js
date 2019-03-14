@@ -14,10 +14,10 @@ class PetsList {
   renderPetsCards(container, pets) {
     let petsListHtml = '';
     pets.forEach(pet => {
-      petsListHtml += `<div class="friends__card">
-      <img class="friends__photo" src="images/pets/${pet.photo}" alt="${pet.name} photo">
-      <h4 class="friends__card-title">${pet.name}</h4>
-      <div class="friends__card-button button" data-id="${pet.id}">Learn More</div>
+      petsListHtml += `<div class="pets__card">
+      <img class="pets__photo" src="images/pets/${pet.photo}" alt="${pet.name} photo">
+      <h4 class="pets__card-title">${pet.name}</h4>
+      <div class="pets__card-button button" data-id="${pet.id}">Learn More</div>
     </div>`;
     });
     container.innerHTML = petsListHtml;
@@ -26,7 +26,7 @@ class PetsList {
   addEventListeners() {
     const modalElements = document.querySelectorAll('.modal-overlay, .modal');
     const modalContentContainer = document.querySelector('.modal__content');
-    const modalOpenButtons = document.querySelectorAll('.friends__card-button');
+    const modalOpenButtons = document.querySelectorAll('.pets__card-button');
     const modalCloseButton = document.querySelector('.modal__close');
 
     modalOpenButtons.forEach(button => {
