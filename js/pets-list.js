@@ -14,6 +14,7 @@ class PetsList {
   renderPetsCards(container, pets) {
     let petsListHtml = '';
     const carousel = $(container);
+
     carousel.trigger('destroy.owl.carousel');
     carousel
       .find('.owl-stage-outer')
@@ -29,7 +30,7 @@ class PetsList {
     </div>`;
     });
     container.innerHTML = petsListHtml;
-
+    /* Initialization of Owl.Carousel */
     carousel.owlCarousel({
       loop: false,
       nav: true,
@@ -54,6 +55,7 @@ class PetsList {
         },
       },
     });
+    /* END: Initialization of Owl.Carousel */
   }
 
   addEventListeners() {

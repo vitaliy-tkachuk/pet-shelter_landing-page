@@ -513,7 +513,6 @@ p {
 .pets__card-button {
   margin-bottom: 10px;
 }
-
 /* END: Pets Section */
 
 /* Donate Section */
@@ -609,7 +608,6 @@ p {
   min-height: 200px;
   order: 1;
 }
-
 /* END: Footer */
 
 /*==========  Mobile First  ========== */
@@ -705,7 +703,6 @@ p {
     opacity: 1;
     visibility: visible;
   }
-
   /* END: Modal Overlay */
 }
 
@@ -764,7 +761,7 @@ p {
   h1 {
     font-size: 1.5rem;
   }
-
+  /* Modal */
   .modal {
     position: fixed;
     top: 0;
@@ -780,4 +777,5 @@ p {
   .modal__close {
     right: 20px !important;
   }
+  /* END: Modal */
 }
