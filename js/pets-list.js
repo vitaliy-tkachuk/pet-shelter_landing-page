@@ -69,9 +69,11 @@ class PetsList {
         modalElements.forEach(modalElement => {
           modalElement.classList.add('active');
         });
+        document.querySelector('body').classList.toggle('lock-scroll');
       });
     });
     modalCloseButton.addEventListener('click', e => {
+      document.querySelector('body').classList.toggle('lock-scroll');
       modalElements.forEach(modalElement => {
         modalElement.classList.remove('active');
       });
