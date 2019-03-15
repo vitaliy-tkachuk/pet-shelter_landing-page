@@ -1,35 +1,3 @@
-/* Owl.Carousel */
-$(document).ready(function() {
-  $('.owl-carousel').owlCarousel({
-    loop: false,
-    nav: true,
-    dots: true,
-    mouseDrag: false,
-    navText: ['🠨', '🠪'],
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true,
-      },
-      600: {
-        items: 2,
-        nav: true,
-      },
-      800: {
-        items: 3,
-        nav: true,
-      },
-      1200: {
-        items: 4,
-        nav: true,
-      },
-    },
-  });
-});
-
-/* END: Owl.Carousel */
-
 /* Pets List Render */
 const petsListContainer = document.querySelector('.pets-carousel');
 const petsList = new PetsList('data/pets.json', petsListContainer);

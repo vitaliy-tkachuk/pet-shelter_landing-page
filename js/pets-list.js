@@ -13,6 +13,14 @@ class PetsList {
   }
   renderPetsCards(container, pets) {
     let petsListHtml = '';
+    const carousel = $(container);
+    carousel.trigger('destroy.owl.carousel');
+    carousel
+      .find('.owl-stage-outer')
+      .children()
+      .unwrap();
+    carousel.removeClass('owl-center owl-loaded owl-text-select-on');
+
     pets.forEach(pet => {
       petsListHtml += `<div class="pets__card">
       <img class="pets__photo" src="images/pets/${pet.photo}" alt="${pet.name} photo">
@@ -21,6 +29,31 @@ class PetsList {
     </div>`;
     });
     container.innerHTML = petsListHtml;
+
+    carousel.owlCarousel({
+      loop: false,
+      nav: true,
+      navText: ['🠨', '🠪'],
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true,
+        },
+        600: {
+          items: 2,
+          nav: true,
+        },
+        800: {
+          items: 3,
+          nav: true,
+        },
+        1200: {
+          items: 4,
+          nav: true,
+        },
+      },
+    });
   }
 
   addEventListeners() {
